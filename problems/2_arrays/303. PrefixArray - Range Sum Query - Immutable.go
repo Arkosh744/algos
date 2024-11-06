@@ -26,8 +26,8 @@ func (a *NumArray) SumRange(left int, right int) int {
 	return a.arr[right+1] - a.arr[left]
 }
 
-/**
- * Your NumArray object will be instantiated and called as such:
- * obj := Constructor(nums);
- * param_1 := obj.SumRange(left,right);
- */
+/*
+Описание решения.
+В конструкторе собираем префиксный массив сумм элементов, добавляя вначале нулевой элемент
+Далее выдаем нужную сумму с левого по правый элемент вычитая из одного значения массива другое по индексам
+*/
