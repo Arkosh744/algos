@@ -38,7 +38,7 @@ func search(nums []int, target int) int {
 
 // < если ответ в правом указателе
 // <= если ответ в левом
-// меняем только функцию good и то, где лежит ответ
+// меняем только функцию good и то, где лежит ответ (в 32 строке nums[l] или nums[r])
 
 func good(val, target int) bool {
 	return val <= target
