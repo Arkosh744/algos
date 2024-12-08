@@ -16,7 +16,7 @@ Explanation: 2 does not exist in nums so return -1
 
 // time: O(log n)
 // mem:  O(1)
-func search(nums []int, target int) int {
+func searchBinary(nums []int, target int) int {
 	l, r := 0, len(nums)
 
 	for r-l > 1 {
